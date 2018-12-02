@@ -1,3 +1,13 @@
+## This code reads an array of land cover pixels (raster). Rasters of 100 x 100 pixels. 
+## Each pixel is about 30 m length. The raster (.csv file) that defines what is a wetland is called 'wetlands' and it contains 5 types:
+#nan: no wetland
+#1: Lake
+#2:Emergent
+#3:Forested wetlands
+#4:Ponds
+#5:Peatland 
+
+## The code predicts the presence of a peatland using reflection of different bands of Landsat images.
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
